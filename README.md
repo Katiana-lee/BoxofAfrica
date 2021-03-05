@@ -19,14 +19,14 @@
 
 ## Overview
 
-_**Box of Africa** is an e-commerce wellness platform that provides authentic African products build using ruby on rails for the backend and React.js client. Users on the frontend will be able to browse products, and have the ability to upload their own product. Those who have login in creditentials will be able to manage their inventory and post, creating and editing product description to their liking._
+**Box of Africa** is an e-commerce wellness platform that provides authentic African products build using ruby on rails for the backend and React.js client. Users on the frontend will be able to browse products, and have the ability to upload their own product. Those who have login in creditentials will be able to manage their inventory and post, creating and editing product description to their liking.
 
 
 <br>
 
 ## MVP
 
-_The **B.O.A** MVP will consist of an easy to navigate site, that will display all the products within the current category chosen. Authentication will be provided allowing logged in users to create various products Also, logged in shop members are able to create, delete, and edit thier own producs that was rendered on the frontend._
+The **B.O.A** MVP will consist of an easy to navigate site, that will display all the products within the current category chosen. Authentication will be provided allowing logged in users to create various products Also, logged in shop members are able to create, delete, and edit thier own producs that was rendered on the frontend.
 
 <br>
 
@@ -41,14 +41,12 @@ _The **B.O.A** MVP will consist of an easy to navigate site, that will display a
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Powers the application functionality._ |
-|   React Router   | _Rendering specific components._ |
-|      Ruby        | _Dynamic, open source programming language that focuses on simplifying code._ |
-|     Rails     | _Backend database management._ |
+|      React       | Powers the application functionality. |
+|   React Router   | Rendering specific components. |
+|      Ruby        | Dynamic, open source programming language that focuses on simplifying code. |
+|     Rails     | Backend database management. |
 
 <br>
 
