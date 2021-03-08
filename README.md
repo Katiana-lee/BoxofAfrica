@@ -54,7 +54,7 @@ The **B.O.A** MVP will consist of an easy to navigate site, that will display al
 
 #### Wireframes
 
-[Desktop Wireframe](https://whimsical.com/LDeXdErDDaayypLFRCSNRv)
+[Click to view Desktop Wireframe](https://whimsical.com/box-of-africa-LDeXdErDDaayypLFRCSNRv)
 
 
 #### Component Tree
