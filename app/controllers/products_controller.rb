@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   def show
-    render json: @product, include: :flavors
+    render json: @product, include: :categories
   end
 
   # POST /products
