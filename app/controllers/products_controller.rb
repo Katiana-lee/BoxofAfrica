@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :update, :destroy]
+  before_action :set_product, only: :show
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /products
   def index
@@ -16,7 +17,7 @@ class ProductsController < ApplicationController
   # POST /products
   def create
     @product = Product.new(product_params)
-
+    @product.user = @current_user
     if @product.save
       render json: @product, status: :created, location: @product
     else
@@ -26,6 +27,7 @@ class ProductsController < ApplicationController
 
   # PATCH/PUT /products/1
   def update
+    @product = @current_user.products.find(params[:id])
     if @product.update(product_params)
       render json: @product
     else
@@ -35,6 +37,7 @@ class ProductsController < ApplicationController
 
   # DELETE /products/1
   def destroy
+    @product = @current_user.products.find(params[:id])
     @product.destroy
   end
 
@@ -46,6 +49,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:name, :user_id, :product_img, :product_details, :price)
+      params.require(:product).permit(:name, :product_img, :product_details, :price)
     end
 end
