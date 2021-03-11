@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.png'
+import './Layout.css'
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props;
@@ -7,15 +9,17 @@ export default function Layout(props) {
   return (
     <div className="App">
       <header>
-        <Link to='/'><h1>Box of Africa</h1></Link>
+      <Link to='/products'><img className="head-photo" src={logo} alt="logo"/></Link>
+        {/* <Link to='/'><h1>Box of Africa</h1></Link> */}
         {
           currentUser ?
             <>
-              <p>{currentUser.username}</p>
-              <button onClick={handleLogout}>Logout</button>
+                {/* <div className="welcome">Welcome, {currentUser.username}</div> */}
+              <div className="welcome"> Welcome, {currentUser.username}</div>
+              <button className="login" onClick={handleLogout}>Logout</button>
             </>
             :
-            <Link to='/login'>Login/Register</Link>
+            <Link  to='/login'>Login/Register</Link>
         }
         <hr />
         {

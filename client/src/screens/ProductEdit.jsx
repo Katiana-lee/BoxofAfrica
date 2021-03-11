@@ -51,7 +51,7 @@ export default function ProductEdit(props) {
           value={name}
           onChange={handleChange}
         />
-
+<br />
       <label className="label" >Image: </label>
       <input
           type='text'
@@ -60,7 +60,7 @@ export default function ProductEdit(props) {
           value={product_img}
           onChange={handleChange}
       />
-
+<br />
       <label className="label" >Description: </label>
        <textarea
           type='text'
@@ -71,7 +71,7 @@ export default function ProductEdit(props) {
           value={product_details}
           onChange={handleChange}
       />
-      
+      <br />
       <label className="label" >Price: </label>
       <input
           type='number'

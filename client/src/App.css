@@ -1,4 +1,57 @@
 .App {
   text-align: center;
+  background-color: #F7F7F7;
 }
 
+h1, h2, p {
+  text-align:center;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+h3 {
+  font-family: 'Roboto';
+}
+
+.product, p {
+  text-decoration: none;
+}
+
+img {
+  width: 100vh;
+  margin: 0px auto 0px auto;
+}
+
+button {
+  /* display: flex;
+  justify-content:last baseline; */
+text-align: center;
+
+  /* width: 30px; */
+  /* border-radius: 20px;
+  padding: 20px 0px;
+  width: 245px;
+  margin-left: 12vw; */
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  color: white;
+  background-color: #336501;
+  letter-spacing: 2px;
+  margin: 40px 0;
+}
+
+.form {
+  height: 100%;
+  text-align: center;
+  display: flex;
+ 
+  }

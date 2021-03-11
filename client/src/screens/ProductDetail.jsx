@@ -1,13 +1,19 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneProduct } from '../services/products';
-import { addProductToCategory} from '../services/productsCategories';
+import { addProductToCategory } from '../services/productsCategories';
+import { Link } from 'react-router-dom';
+import React from 'react';
+
+
+
 
 export default function FoodDetail(props) {
   const [productItem, setProductItem] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('')
   const { id } = useParams();
   const { categories } = props;
+  const { product, handleDelete, currentUser } = props;
 
   useEffect(() => {
     const fetchProductItem = async () => {
@@ -30,15 +36,19 @@ export default function FoodDetail(props) {
 
   return (
     <div>
-      <img src={productItem?.product_img} alt="product-image"/>
-      <h3>{productItem?.name}</h3>
+      <img src={productItem?.product_img} alt="products"/>
+      <h2>{productItem?.name}</h2>
       <h3>{productItem?.product_details}</h3>
-      <h3>{productItem?.price}</h3>
+      <h2>{productItem?.price}</h2>
      
+  
+           
+  
+          
       {/* {productItem?.categories.map((category) => (
         <p key={category.id}>{category.name}</p>
       ))} */}
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <select defaultValue="default" onChange={handleChange}>
           <option value="default" disabled>-- Select a category --</option>
           {categories.map(category => (
@@ -46,7 +56,7 @@ export default function FoodDetail(props) {
           ))}
         </select>
         <button>add</button>
-      </form>
+      </form> */}
 
     </div>
   )

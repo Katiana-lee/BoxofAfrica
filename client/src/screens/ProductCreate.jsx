@@ -28,11 +28,11 @@ export default function FoodCreate(props) {
         <input
           type='text'
           name='name'
-          placeholder='Enter Name'
+          placeholder='Title'
           value={name}
           onChange={handleChange}
         />
-
+<br />
       <label className="label" >Image: </label>
       <input
           type='text'
@@ -41,18 +41,18 @@ export default function FoodCreate(props) {
           value={product_img}
           onChange={handleChange}
       />
-
+<br />
       <label className="label" >Description: </label>
        <textarea
           type='text'
         name='product_details'
         cols='30'
         rows='10'
-          placeholder='Descrription'
+          placeholder='Description'
           value={product_details}
           onChange={handleChange}
       />
-      
+      <br />
       <label className="label" >Price: </label>
       <input
           type='number'

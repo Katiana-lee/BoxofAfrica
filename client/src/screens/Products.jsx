@@ -5,7 +5,7 @@ export default function Products(props) {
   const { products, handleDelete, currentUser } = props;
 
   return (
-    <div>
+    <div className='product'>
       <h3>Products</h3>
       {products.map((product) => (
         <React.Fragment key={product.id}>

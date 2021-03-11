@@ -1,0 +1,18 @@
+/* .head-photo {
+  display:flex;
+  justify-content:end;
+  text-align: center;
+  align-items: center;
+
+} */
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+/* .login {
+  display:flex;
+  text-align: center;
+} */
