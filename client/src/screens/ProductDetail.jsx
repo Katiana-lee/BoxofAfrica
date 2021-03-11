@@ -4,7 +4,7 @@ import { getOneProduct } from '../services/products';
 import { addProductToCategory} from '../services/productsCategories';
 
 export default function FoodDetail(props) {
-  const [productItem, setProductItem] = useState(null);
+  const [productItem, setProductItem] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('')
   const { id } = useParams();
   const { categories } = props;
@@ -30,10 +30,14 @@ export default function FoodDetail(props) {
 
   return (
     <div>
+      <img src={productItem?.product_img} alt="product-image"/>
       <h3>{productItem?.name}</h3>
-      {productItem?.categories.map((category) => (
+      <h3>{productItem?.product_details}</h3>
+      <h3>{productItem?.price}</h3>
+     
+      {/* {productItem?.categories.map((category) => (
         <p key={category.id}>{category.name}</p>
-      ))}
+      ))} */}
       <form onSubmit={handleSubmit}>
         <select defaultValue="default" onChange={handleChange}>
           <option value="default" disabled>-- Select a category --</option>

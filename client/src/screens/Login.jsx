@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 export default function Login(props) {
   const [formData, setFormData] = useState({
     username: '',
@@ -47,7 +48,8 @@ export default function Login(props) {
         />
       </label>
       <br />
-      <Link to='/register'>Register</Link>
+      Don't have an account? Register <Link to='/register'>here</Link>
+      <br/>
       <button>Submit</button>
     </form>
   )
