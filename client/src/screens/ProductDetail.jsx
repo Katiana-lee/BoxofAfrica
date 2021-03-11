@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneProduct } from '../services/products';
 import { addProductToCategory } from '../services/productsCategories';
-import { Link } from 'react-router-dom';
 import React from 'react';
 
 
@@ -13,7 +12,7 @@ export default function FoodDetail(props) {
   const [selectedCategory, setSelectedCategory] = useState('')
   const { id } = useParams();
   const { categories } = props;
-  const { product, handleDelete, currentUser } = props;
+ 
 
   useEffect(() => {
     const fetchProductItem = async () => {
@@ -45,18 +44,8 @@ export default function FoodDetail(props) {
            
   
           
-      {/* {productItem?.categories.map((category) => (
-        <p key={category.id}>{category.name}</p>
-      ))} */}
-      {/* <form onSubmit={handleSubmit}>
-        <select defaultValue="default" onChange={handleChange}>
-          <option value="default" disabled>-- Select a category --</option>
-          {categories.map(category => (
-            <option value={category.id} key={category.id}>{category.name}</option>
-          ))}
-        </select>
-        <button>add</button>
-      </form> */}
+     
+      
 
     </div>
   )

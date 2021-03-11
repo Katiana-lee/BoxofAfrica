@@ -2,6 +2,11 @@
   text-align: center;
   background-color: #F7F7F7;
 }
+a:link {
+  text-decoration: none;
+
+}
+
 
 h1, h2, p {
   text-align:center;
@@ -10,43 +15,45 @@ h1, h2, p {
   text-decoration: none;
   border: none;
   outline: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  font-size: 25px;
+
 }
 
 h3 {
+  display: flex;
+  justify-content: space-evenly;
   font-family: 'Roboto';
+  margin: 40px 0;
+  padding: 10px;
 }
 
-.product, p {
-  text-decoration: none;
+p {
+  color: #336501;
 }
 
 img {
-  width: 100vh;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
   margin: 0px auto 0px auto;
 }
 
 button {
-  /* display: flex;
-  justify-content:last baseline; */
 text-align: center;
-
-  /* width: 30px; */
-  /* border-radius: 20px;
-  padding: 20px 0px;
-  width: 245px;
-  margin-left: 12vw; */
+cursor: pointer;
   width: 100px;
   height: 40px;
   border: none;
-  border-radius: 0;
   outline: none;
   color: white;
   background-color: #336501;
   letter-spacing: 2px;
-  margin: 40px 0;
+  margin: 10px 0;
+}
+
+button:hover {
+  outline: #F7F7F7;
+  border: #F7F7F7;
 }
 
 .form {
@@ -54,4 +61,23 @@ text-align: center;
   text-align: center;
   display: flex;
  
+  }
+
+  /* a{
+    outline: none;
+    display: flex;
+    justify-content: space-evenly;
+  } */
+
+  @media screen and (max-width: 600px) { 
+    .App {
+      background-color: #FFCC33;
+    }
+    button { 
+        height: 0 auto;
+    }
+    button:hover {
+      background: #F7F7F7;
+      color: #000000;
+    }
   }
